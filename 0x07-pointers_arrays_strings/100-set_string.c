@@ -1,22 +1,13 @@
-#include "main.h"
 #include <stdio.h>
-
 /**
-  * set_string - main function
-  *
-  * @s: Function parameter
-  *
-  * @to: Function parameter
-  *
-  * Return: Always 0.
-  */
-int main(void)
+ * set_string - redirect.
+ * @s: double pointer to address
+ * @to: the original pointer
+ *
+ * Return: chessboard.
+ */
+void set_string(char **s, char *to)
 {
-	char *s0 = "Bob Dylan";
-	char *s1 = "Robert Allen";
-
-	printf("%s, %s/n", s0, s1);
-	set_string(&s1, s0);
-	printf("%s, %s/n", s0, s1);
-	return (0);
+	*s = to;
 }
+
